@@ -127,7 +127,7 @@ nav{
 .header{
     min-height: 100vh;
     width: 100%;
-    background: url('Wallpaper1.png') no-repeat fixed;
+    background: url('background.jpg') no-repeat fixed;
     background-position: center;
     background-size: cover;
     position: relative;
