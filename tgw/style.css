@@ -103,9 +103,9 @@ nav{
 }
 
 .button {
-  background-color: #b0ffff; /* Green */
+  background-color: #b0ffff;
   border: none;
-  color: rgb(36, 51, 115);
+  color: #1A1F46;
   padding: 5x 32px;
   text-align: center;
   text-decoration: none;
