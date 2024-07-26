@@ -120,11 +120,11 @@ nav{
 }
 
 .titleBox a:link{
-    text-decoration-color: rgb(255, 217, 0);
+    text-decoration-color: #b0ffff;
 }
 
 .titleBox a:visited{
-    text-decoration-color: rgb(255, 217, 0);
+    text-decoration-color: #b0ffff;
 }
 
 .titleBox a:hover{
