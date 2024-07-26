@@ -123,6 +123,11 @@ nav{
     text-decoration: none;
 }
 
+.titleBox a:hover{
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+    transition: 0.5s;
+}
 
 .button {
   background-color: #b0ffff;
@@ -188,14 +193,10 @@ nav{
 
 
 
-
-
 /* -- Contact -- */
 
 .contactForm label{
-
     display: block;
-
     margin: 10px 0;
 
 }
