@@ -168,29 +168,18 @@ nav{
 /* -- Services -- */
 
 .panels{
-
     background: linear-gradient(rgba(0, 174, 255, 1), rgba(0, 174, 255, 1));
-
     height: 300px;
-
     width: 300px;
-
     border-radius: 100px;
-
     display: inline-block;
-
 }
-
 
 
 .panelMat{
-
     padding-top: 30%;
-
     color: white;
-
 }
-
 
 
 /* -- Contact -- */
