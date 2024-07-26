@@ -117,6 +117,10 @@ nav{
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+}
+
+
+.titleBox ul li a{
     text-decoration: none;
 }
 
