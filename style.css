@@ -12,7 +12,7 @@ h1{
 
 h2{
     font-size: 36px;
-    text-decoration: underline  rgb(255, 217, 0);
+    text-decoration: underline rgb(255, 217, 0);
 }
 
 
@@ -120,11 +120,13 @@ nav{
 }
 
 .titleBox a:link{
-    text-decoration: underline  rgb(255, 217, 0);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 217, 0);
 }
 
 .titleBox a:hover{
-    text-decoration: underline  rgb(255, 217, 0);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 217, 0);
     color: rgb(255, 217, 0);
     transition: 0.5s;
 }
