@@ -123,11 +123,17 @@ nav{
     text-decoration-color: rgb(255, 217, 0);
 }
 
-.titleBox a:hover{
-    text-decoration: underline;
+.titleBox a:visited{
     text-decoration-color: rgb(255, 217, 0);
-    color: rgb(255, 217, 0);
+}
+
+.titleBox a:hover{
+    text-decoration-color: rgb(255, 217, 0);
     transition: 0.5s;
+}
+
+.titleBox a:active{
+    text-decoration-color: rgb(255, 217, 0);
 }
 
 .button {
