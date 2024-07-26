@@ -121,7 +121,7 @@ nav{
 
 .titleBox a:link{
     text-decoration: underline;
-    text-decoration-color: rgb(255, 217, 0);
+    color: rgb(255, 217, 0);
 }
 
 .titleBox a:hover{
