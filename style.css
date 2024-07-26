@@ -119,7 +119,7 @@ nav{
     text-align: center;
 }
 
-.titleBox ul li a{
+.titleBox a:link{
     text-decoration: none;
 }
 
