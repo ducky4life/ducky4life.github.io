@@ -63,12 +63,21 @@ nav{
     color: white; 
     padding-top: 10px;
     transition: 0.5s;
-    width: min(30vw, 100%);
     min-width: fit-content;
-    font-size: min(5vw, 60px);
-    
 }
 
+@media (max-width: 35em){
+    .headerLogo h3{
+        flex-direction: row;
+        text-decoration: none; 
+        color: white; 
+        padding-top: 10px;
+        transition: 0.5s;
+        width: min(30vw, 100%);
+        min-width: fit-content;
+        font-size: min(5vw, 60px);
+    }
+}
 
 .headerLogo h3:hover{
     color: rgb(255, 217, 0); 
