@@ -63,7 +63,8 @@ nav{
     color: white; 
     padding-top: 10px;
     transition: 0.5s;
-    align-items: flex-end;
+    width: min(30vw, 100%);
+    padding-right: min(30vw, 100vw - 10px);
 }
 
 
