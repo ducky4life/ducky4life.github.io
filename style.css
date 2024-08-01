@@ -113,6 +113,7 @@ nav{
     height: 100px;
     display: block;
     justify-content: center;
+    position: sticky;
 }
 
 
