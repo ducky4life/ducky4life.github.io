@@ -121,6 +121,11 @@ nav{
     color: white;
 }
 
+.titleBox span{
+    font-size: min(100%, 90vw);
+    min-width: fit-content;
+}
+
 .titleBox a:link{
     text-decoration-color: #b0ffff;
 }
