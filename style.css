@@ -66,6 +66,7 @@ nav{
     width: min(30vw, 100%);
     min-width: fit-content;
     font-size: min(5vw, 60px);
+    max-width: 500px;
 }
 
 .headerLogo h3:hover{
