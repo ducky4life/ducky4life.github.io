@@ -65,7 +65,7 @@ nav{
     transition: 0.5s;
     width: min(30vw, 100%);
     text-wrap: nowrap;
-    font-size: min(4vw, 30px);
+    font-size: min(4vw, 35px);
     max-width: 500px;
 }
 
