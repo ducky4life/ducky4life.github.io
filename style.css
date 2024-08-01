@@ -62,8 +62,7 @@ nav{
     color: white; 
     padding-top: 10px;
     transition: 0.5s;
-    justify-content: space-between;
-
+    justify-content: right;
 }
 
 
