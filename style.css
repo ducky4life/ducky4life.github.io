@@ -62,7 +62,8 @@ nav{
     color: white; 
     padding-top: 10px;
     transition: 0.5s;
-    font-size: min(30vw, 24px);
+    justify-content: space-between;
+
 }
 
 
