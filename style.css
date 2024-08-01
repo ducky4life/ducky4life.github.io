@@ -58,11 +58,12 @@ nav{
 
 
 .headerLogo h3{
+    flex-direction: row;
     text-decoration: none; 
     color: white; 
     padding-top: 10px;
     transition: 0.5s;
-    justify-content: right;
+    align-items: flex-end;
 }
 
 
