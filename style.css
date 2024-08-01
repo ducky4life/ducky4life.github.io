@@ -66,7 +66,7 @@ nav{
     min-width: fit-content;
 }
 
-@media (max-width: 35em){
+@media (max-width: 600px){
     .headerLogo h3{
         flex-direction: row;
         text-decoration: none; 
@@ -125,7 +125,7 @@ nav{
     justify-content: center;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 600px) {
     .headerBar{
         background-color: rgb(36, 51, 115);
         width: 100%;
