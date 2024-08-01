@@ -119,9 +119,6 @@ nav{
     margin-inline: auto;
     transform: translate(-50%, -50%);
     color: white;
-}
-
-.titleBox span{
     font-size: min(100%, 90vw);
     min-width: fit-content;
 }
