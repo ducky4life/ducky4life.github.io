@@ -64,9 +64,8 @@ nav{
     padding-top: 10px;
     transition: 0.5s;
     width: min(30vw, 100%);
-    padding-right: min(30vw, 100vw - 10px);
     min-width: fit-content;
-    font-size: 2vw;
+    font-size: 30vw;
 }
 
 
