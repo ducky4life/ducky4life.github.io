@@ -61,6 +61,7 @@ nav{
     flex-direction: row;
     text-decoration: none; 
     color: white; 
+    padding: 10px;
     transition: 0.5s;
     width: min(30vw, 100%);
     text-wrap: nowrap;
