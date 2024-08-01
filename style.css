@@ -65,7 +65,8 @@ nav{
     transition: 0.5s;
     width: min(30vw, 100%);
     min-width: fit-content;
-    font-size: 5vw;
+    font-size: min(5vw, 48px);
+    
 }
 
 
