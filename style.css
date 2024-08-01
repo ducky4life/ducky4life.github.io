@@ -64,7 +64,7 @@ nav{
     padding-top: 10px;
     transition: 0.5s;
     width: min(30vw, 100%);
-    min-width: fit-content;
+    text-wrap: nowrap;
     font-size: min(5vw, 30px);
     max-width: 500px;
 }
