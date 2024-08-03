@@ -207,6 +207,12 @@ nav {
   font-size: 16px;
 }
 
+@media all and (orientation: portrait) {
+  .button3 {
+    font-size: 3vw;
+  }
+}
+
 .button4 {
   font-size: 20px;
 }
