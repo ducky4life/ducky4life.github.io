@@ -1,157 +1,191 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: Georgia; font-weight: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Georgia;
+  font-weight: normal;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 /* -- Font Sizes, Padding, Weight, etc -- */
-h1{
-    font-size: 75px;
+h1 {
+  font-size: 75px;
 }
 
-
-h2{
-    font-size: 36px;
-    text-decoration: underline rgb(255, 217, 0);
+h2 {
+  font-size: 36px;
+  text-decoration: underline rgb(255, 217, 0);
 }
 
-
-h3{
-     font-size: 24px;
+h3 {
+  font-size: 24px;
 }
 
-
-
-h4{
-    font-size: 20px;
+h4 {
+  font-size: 20px;
 }
 
-
-h5{
-    font-size: 18px;
+h5 {
+  font-size: 18px;
 }
 
-
-p{
-    font-size: 20px;
-    padding: 10px;
-    font-weight: 300;
-    line-height: 150%;
+p {
+  font-size: minmax(20px, 1fr);
+  padding: 10px;
+  font-weight: 300;
+  line-height: 150%;
 }
-
 
 /* -- Navigation Bar -- */
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.756%;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.756%;
+  align-items: center;
 }
 
-
-.headerLogo{
-    text-decoration: none; 
-    color: white; 
-    padding-top: 10px;
+.headerLogo {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
 }
 
-
-.headerLogo h3{
-    flex-direction: row;
-    text-decoration: none; 
-    color: white; 
-    padding: 10px;
-    transition: 0.5s;
-    width: min(30vw, 100%);
-    text-wrap: nowrap;
-    font-size: min(4vw, 35px);
-    max-width: 500px;
+.headerLogo h3 {
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: 0.5s;
+  width: min(30vw, 100%);
+  text-wrap: nowrap;
+  font-size: min(4vw, 35px);
+  max-width: 500px;
 }
 
-.headerLogo h3:hover{
-    color: rgb(255, 217, 0); 
-    transition: 0.5s;
+.headerLogo h3:hover {
+  color: rgb(255, 217, 0);
+  transition: 0.5s;
 }
 
-
-.linksNav{
-    text-align: right;
-    padding-top: 5px;
+.linksNav {
+  text-align: right;
+  padding-top: 5px;
 }
 
-
-.linksNav ul li{
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    padding: 15px;
-} 
-
-
-.linksNav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: 0.5s;
+.linksNav ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 15px;
 }
 
-
-.linksNav ul li a:hover{
-    text-decoration: none;
-    color: rgb(255, 217, 0);
-    transition: 0.5s;
-    font-size: 20px;
+.linksNav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
 }
 
+.linksNav ul li a:hover {
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+/* -- Header Image --*/
+
+.header.header {
+  display: grid;
+  place-items: center;
+  background: url("background.jpg") no-repeat fixed;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  text-wrap: wrap;
+  display: grid;
+  width: 100%;
+  min-width: fit-content;
+}
+
+@media all and (orientation: portrait) {
+  .header {
+    text-wrap: wrap;
+    display: grid;
+    width: 100%;
+    min-width: fit-content;
+    font-size: 3vw;
+  }
+}
 
 /* -- Header -- */
 
-.headerBar{
-    background-color: rgb(36, 51, 115);
-    width: 100%;
-    height: 100px;
-    display: block;
-    justify-content: center;
-    position: sticky;
-    top: 0;
+.headerBar {
+  background-color: rgb(36, 51, 115);
+  width: 100%;
+  height: 100px;
+  display: block;
+  justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
+.titleBox {
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 25%;
+}
 
-.titleBox{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: min(90vw, 100%);
-    margin-inline: auto;
-    transform: translate(-50%, -50%);
+@media all and (orientation: portrait) {
+  .titleBox {
     color: white;
-    font-size: min(100%, 90vw);
-    min-width: fit-content;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
-.titleBox a:link{
-    text-decoration-color: #b0ffff;
+.titleBox a:link {
+  text-decoration-color: #b0ffff;
 }
 
-.titleBox a:visited{
-    text-decoration-color: #b0ffff;
+.titleBox a:visited {
+  text-decoration-color: #b0ffff;
 }
 
-.titleBox a:hover{
-    text-decoration-color: rgb(255, 217, 0);
-    transition: 0.5s;
+.titleBox a:hover {
+  text-decoration-color: rgb(255, 217, 0);
+  transition: 0.5s;
 }
 
-.titleBox a:active{
-    text-decoration-color: rgb(255, 217, 0);
+.titleBox a:active {
+  text-decoration-color: rgb(255, 217, 0);
 }
 
 .button {
   background-color: #b0ffff;
   border: none;
-  color: #1A1F46;
-  padding: 5x 32px;
+  color: #1a1f46;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -160,99 +194,93 @@ nav{
   min-width: fit-content;
 }
 
-
-.button1 {font-size: 10px;}
-
-.button2 {font-size: 12px;}
-
-.button3 {font-size: 16px;}
-
-.button4 {font-size: 20px;}
-
-.button5 {font-size: 24px;}
-
-
-/* -- Header Image --*/
-
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background: url('background.jpg') no-repeat fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.button1 {
+  font-size: 10px;
 }
 
+.button2 {
+  font-size: 12px;
+}
+
+.button3 {
+  font-size: 16px;
+}
+
+.button4 {
+  font-size: 20px;
+}
+
+.button5 {
+  font-size: 24px;
+}
 
 /* -- Services -- */
 
-.panels{
-    background: linear-gradient(rgba(0, 174, 255, 1), rgba(0, 174, 255, 1));
-    height: 300px;
-    width: 300px;
-    border-radius: 100px;
-    display: inline-block;
+.panels {
+  background: linear-gradient(rgba(0, 174, 255, 1), rgba(0, 174, 255, 1));
+  height: 300px;
+  width: 300px;
+  border-radius: 100px;
+  display: inline-block;
 }
 
-
-.panelMat{
-    padding-top: 30%;
-    color: white;
+.panelMat {
+  padding-top: 30%;
+  color: white;
 }
-
 
 /* -- Contact -- */
 
-.contactForm label{
-    display: block;
-    margin: 10px 0;
-
+.contactForm label {
+  display: block;
+  margin: 10px 0;
 }
 
-
-.contactForm input, button{
-   padding: 7px;
-   width: 20%;
-   outline: none;
-   box-sizing: border-box;
-   border: none;
-   border-bottom: 1px solid rgb(199, 199, 199);
-   resize: none;
+.contactForm input,
+button {
+  padding: 7px;
+  width: 20%;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  resize: none;
 }
 
-
-.contactForm input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
-    border-bottom: 1px solid rgb(0, 174, 255);
- }
-
+.contactForm input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-bottom: 1px solid rgb(0, 174, 255);
+}
 
 /* --Break-- */
 
-.break{
-    min-height: 40vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)), url('rubberduckies.jpg') no-repeat fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.break {
+  min-height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)),
+    url("rubberduckies.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-
-.breakPnP{
-    min-height: 40vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)), url('rubberduckies.jpg') no-repeat fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.breakPnP {
+  min-height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)),
+    url("rubberduckies.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-
-.breakSCS{
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)), url('rubberduckies.jpg') no-repeat fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.breakSCS {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 144, 180, 0.7), rgba(156, 173, 0, 0.7)),
+    url("rubberduckies.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
