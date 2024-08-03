@@ -25,6 +25,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  font-size: minmax(20px, 1fr);
 }
 
 h4 {
