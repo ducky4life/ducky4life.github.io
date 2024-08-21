@@ -83,32 +83,6 @@ nav {
   transition: 0.5s;
 }
 
-.linksNav {
-  text-align: right;
-  padding-top: 5px;
-}
-
-.linksNav ul li {
-  list-style: none;
-  display: inline-block;
-  position: relative;
-  padding: 15px;
-}
-
-.linksNav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  transition: 0.5s;
-}
-
-.linksNav ul li a:hover {
-  text-decoration: none;
-  color: rgb(255, 217, 0);
-  transition: 0.5s;
-  font-size: 20px;
-}
-
 /* -- Header Image --*/
 
 .header.header {
