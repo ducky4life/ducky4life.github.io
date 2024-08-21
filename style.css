@@ -63,8 +63,19 @@ nav {
   text-decoration: none;
   color: white;
   text-wrap: nowrap;
-  font-size: min(4vw, 35px);
+  font-size: 35px;
   max-width: 500px;
+}
+
+@media all and (orientation: portrait) {
+  .headerLogo h3 {
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    text-wrap: nowrap;
+    font-size: 5vw;
+    max-width: 500px;
+  }
 }
 
 .headerLogo h3:hover {
