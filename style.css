@@ -5,6 +5,7 @@
   font-weight: normal;
   text-wrap: wrap;
   word-wrap: break-word;
+  overflow-x: hidden;
 }
 
 .body {
