@@ -96,6 +96,7 @@ nav {
   background-size: cover;
   position: relative;
   resize: none;
+  overflow: hidden;
 }
 
 .header {
