@@ -131,7 +131,7 @@ nav {
     position: relative;
     top: 10vh;
     place-content: center;
-    overflow-y: visible;
+    overflow-y: scroll;
   }
 }
 
