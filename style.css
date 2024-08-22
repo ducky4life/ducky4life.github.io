@@ -98,6 +98,7 @@ nav {
   background-position-y: top;
   background-size: cover;
   position: relative;
+  top: max(10vh, 100px);
 }
 
 .header {
@@ -121,12 +122,13 @@ nav {
     display: grid;
     place-items: center;
     background: url("background.jpg") no-repeat fixed;
-    height: 130svh;
+    height: 110svh;
     width: 100%;
     background-position-x: center;
     background-position-y: top;
     background-size: auto 150vh;
     position: relative;
+    top: 10vh;
   }
 }
 
@@ -137,8 +139,7 @@ nav {
   width: 100vw;
   height: 10vh;
   min-height: 100px;
-  display: block;
-  position: sticky;
+  position: fixed;
   top: 0px;
   place-content: center;
   z-index: 99;
@@ -146,25 +147,27 @@ nav {
 
 .titleBox {
   color: white;
-  height: fit-content;
+  height: 100vh;
   width: fit-content;
   display: flex;
   flex-direction: column;
   padding-left: 25%;
   padding-right: 25%;
   min-width: fit-content;
+  place-content: center;
 }
 
 @media all and (orientation: portrait) {
   .titleBox {
     color: white;
-    height: fit-content;
+    height: 100vh;
     width: fit-content;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
     min-width: fit-content;
+    place-content: center;
   }
 }
 
