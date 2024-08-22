@@ -89,7 +89,7 @@ nav {
   display: grid;
   place-items: center;
   background: url("background.jpg") no-repeat fixed;
-  height: 100lvh;
+  height: 100dvh;
   width: 100%;
   background-position: center;
   background-size: cover;
