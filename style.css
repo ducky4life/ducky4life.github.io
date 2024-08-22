@@ -5,7 +5,7 @@
   font-weight: normal;
   text-wrap: wrap;
   word-wrap: break-word;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .body {
@@ -99,6 +99,7 @@ nav {
   background-size: cover;
   position: relative;
   top: max(10vh, 100px);
+  overflow-y: visible;
 }
 
 .header {
@@ -116,6 +117,7 @@ nav {
     width: 100%;
     min-width: fit-content;
     font-size: 3vw;
+    overflow-y: visible;
   }
 
   .header.header {
