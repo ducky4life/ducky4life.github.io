@@ -231,13 +231,18 @@ nav {
 }
 
 .bioBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: max(10vh, 100px);
   color: white;
   height: fit-content;
   width: fit-content;
   padding-left: 10%;
   padding-right: 10%;
   min-width: fit-content;
-  font-size: 3vh;
+  font-size: 1.5vw;
+  overflow: visible;
 }
 
 @media all and (orientation: portrait) {
