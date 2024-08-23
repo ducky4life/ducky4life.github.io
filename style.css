@@ -165,13 +165,39 @@ nav {
 .titleBox {
   color: white;
   height: 100vh;
-  width: fit-content;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   padding-left: 25%;
   padding-right: 25%;
   min-width: fit-content;
   place-content: center;
+}
+
+.wardentitle {
+  font-size: 180%;
+}
+
+.wardenlinks {
+  font-size: 120%;
+}
+
+@media all and (orientation: landscape) {
+  .wardentitle {
+    font-size: min(3vw, 35px);
+  }
+
+  .wardenlinks {
+    font-size: min(2vw, 30px);
+  }
+
+  .wardencontent {
+    font-size: min(1.7vw, 27px);
+  }
+
+  .wardenrecruit {
+    font-size: min(1.3vw, 23px);
+  }
 }
 
 @media all and (orientation: portrait) {
@@ -183,6 +209,7 @@ nav {
     padding-left: 10px;
     padding-right: 10px;
     min-width: fit-content;
+    width: 100%;
   }
 }
 
@@ -228,7 +255,7 @@ nav {
   background-color: #b0ffff;
   border: none;
   color: #1a1f46;
-  padding: 6px 26px;
+  padding: 1vh 26px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -246,7 +273,7 @@ nav {
 }
 
 .button3 {
-  font-size: 16px;
+  font-size: min(1.5vw, 23px);
 }
 
 @media all and (orientation: portrait) {
