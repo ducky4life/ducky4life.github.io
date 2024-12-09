@@ -230,6 +230,17 @@ nav {
   text-decoration-color: rgb(255, 217, 0);
 }
 
+#textarea-container {
+  text-align: center;
+}
+
+textarea {
+  color: #000;
+  width: min(100%, 600px);
+  height: 20vh;
+  margin-bottom: 10px;
+}
+
 .bioBox {
   position: relative;
   display: flex;
