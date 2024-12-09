@@ -9,6 +9,12 @@ function output(e)
     const dbidInput = document.querySelector('#dbid').value.split('\n');
     for (let i = 0; i !== dbidInput.length; i++)
         output.innerHTML += `<a href="https://www.nationstates.net/page=deck/card=${dbidInput[i]}"><font color="#b0ffff">https://www.nationstates.net/page=deck/card=${dbidInput[i]}</font></a><br>`;
+    document.querySelectorAll("#output").forEach((link) => {
+        link.addEventListener("click", async (e) => {
+          e.preventDefault();
+          window.open(link.href, "_blank");
+        });
+      });
 }
 
 document.querySelector('#convert').addEventListener('click', output);
