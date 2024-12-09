@@ -8,10 +8,11 @@ function output(e)
     output.innerHTML = '';
     const dbidInput = document.querySelector('#dbid').value.split('\n');
     for (let i = 0; i !== dbidInput.length; i++)
-        output.innerHTML += `<a href="https://www.nationstates.net/page=deck/card=${dbidInput[i]}"><font color="#b0ffff">https://www.nationstates.net/page=deck/card=${dbidInput[i]}</font></a><br>`;
-    document.querySelectorAll("#output").forEach((link) => {
+        output.innerHTML += `<a href="https://www.nationstates.net/page=deck/card=${dbidInput[i]}" target="_blank" class="cardlink"><font color="#b0ffff">https://www.nationstates.net/page=deck/card=${dbidInput[i]}</font></a><br>`;
+    document.querySelectorAll(".cardlink").forEach((link) => {
         link.addEventListener("click", async (e) => {
           e.preventDefault();
+          await navigator.clipboard.writeText(link.href);
           window.open(link.href, "_blank");
         });
       });
