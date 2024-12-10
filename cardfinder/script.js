@@ -12,7 +12,6 @@ function output(e)
     document.querySelectorAll(".cardlink").forEach((link) => {
         link.addEventListener("click", async (e) => {
           e.preventDefault();
-          await navigator.clipboard.writeText(link.href);
           window.open(link.href, "_blank");
         });
       });
