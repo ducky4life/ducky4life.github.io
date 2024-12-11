@@ -8,6 +8,25 @@
   overflow-x: hidden;
 }
 
+a:link {
+  text-decoration-color: #b0ffff;
+  color: white;
+}
+
+a:visited {
+  text-decoration-color: #b0ffff;
+  color: white;
+}
+
+a:hover {
+  text-decoration-color: rgb(255, 217, 0);
+  transition: 0.5s;
+}
+
+a:active {
+  text-decoration-color: rgb(255, 217, 0);
+}
+
 .body {
   text-align: center;
   display: grid;
@@ -211,23 +230,6 @@ nav {
     min-width: fit-content;
     width: calc(100% - 20px);
   }
-}
-
-.titleBox a:link {
-  text-decoration-color: #b0ffff;
-}
-
-.titleBox a:visited {
-  text-decoration-color: #b0ffff;
-}
-
-.titleBox a:hover {
-  text-decoration-color: rgb(255, 217, 0);
-  transition: 0.5s;
-}
-
-.titleBox a:active {
-  text-decoration-color: rgb(255, 217, 0);
 }
 
 #textarea-container {
