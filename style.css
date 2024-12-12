@@ -138,7 +138,7 @@ nav {
     background-position-y: top;
     background-size: cover;
     position: relative;
-    top: max(10vh, 100px);
+    top: max(15vh, 100px);
     overflow: hidden;
   }
 }
@@ -184,13 +184,16 @@ nav {
 .titleBox {
   color: white;
   height: 100vh;
-  width: 50vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  padding-left: 25%;
-  padding-right: 25%;
   min-width: fit-content;
   place-content: center;
+}
+
+.mainBox {
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .wardentitle {
@@ -229,6 +232,11 @@ nav {
     padding-right: 10px;
     min-width: fit-content;
     width: calc(100% - 20px);
+  }
+
+  .mainBox {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
