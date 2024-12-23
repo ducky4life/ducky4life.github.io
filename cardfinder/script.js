@@ -6,9 +6,10 @@ function output(e)
 {
     const output = document.querySelector('#output');
     output.innerHTML = '';
+    const season = document.querySelector('#season').value;
     const dbidInput = document.querySelector('#dbid').value.split('\n');
     for (let i = 0; i !== dbidInput.length; i++)
-        output.innerHTML += `<a href="https://www.nationstates.net/page=deck/card=${dbidInput[i]}" target="_blank" class="cardlink">https://www.nationstates.net/page=deck/card=${dbidInput[i]}</a><br>`;
+        output.innerHTML += `<a href="https://www.nationstates.net/page=deck/card=${dbidInput[i]}/season=${season}" target="_blank" class="cardlink">https://www.nationstates.net/page=deck/card=${dbidInput[i]}</a><br>`;
     document.querySelectorAll(".cardlink").forEach((link) => {
         link.addEventListener("click", async (e) => {
           e.preventDefault();
