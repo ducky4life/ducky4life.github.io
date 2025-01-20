@@ -8,6 +8,10 @@
   overflow-x: hidden;
 }
 
+html, body a {
+  cursor: url("favicon.ico"), auto;
+}
+
 a:link {
   text-decoration-color: #b0ffff;
   color: white;
