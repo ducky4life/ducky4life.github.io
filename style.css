@@ -294,6 +294,12 @@ textarea {
   width: fit-content;
 }
 
+.button:hover{
+  background-color: #1a1f46;
+  color: #b0ffff;
+  transition: 0.2s;
+}
+
 .button1 {
   font-size: 10px;
 }
