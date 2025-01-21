@@ -19,6 +19,21 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1f46;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b0ffff;
+}
+
 html, body a {
   cursor: url("favicon.ico"), auto;
 }
@@ -42,8 +57,7 @@ a:active {
   text-decoration-color: rgb(255, 217, 0);
 }
 
-.body {
-  text-align: center;
+body {
   display: grid;
   place-items: center;
 }
@@ -91,9 +105,6 @@ nav {
 .headerLogo {
   text-decoration: none;
   color: white;
-}
-
-.headerLogo h3 {
   flex-direction: row;
   text-decoration: none;
   color: white;
@@ -103,7 +114,7 @@ nav {
 }
 
 @media all and (orientation: portrait) {
-  .headerLogo h3 {
+  .headerLogo{
     flex-direction: row;
     text-decoration: none;
     color: white;
@@ -114,7 +125,7 @@ nav {
   }
 }
 
-.headerLogo h3:hover {
+.headerLogo:hover {
   color: rgb(255, 217, 0);
   transition: 0.5s;
 }
@@ -186,7 +197,7 @@ nav {
 /* -- Header -- */
 
 .headerBar {
-  background-color: rgb(36, 51, 115);
+  background-color: rgba(36, 50, 115, 0.95);
   width: 100vw;
   height: 10vh;
   min-height: 90px;
@@ -209,6 +220,11 @@ nav {
 .mainBox {
   padding-left: 25%;
   padding-right: 25%;
+}
+
+.mainBox.nopadding {
+  margin-left: -25%;
+  margin-right: -25%;
 }
 
 .wardentitle {
