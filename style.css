@@ -107,6 +107,12 @@ nav {
   padding-left: 2vw;
 }
 
+@media all and (orientation: portrait) {
+  nav {
+    padding-left: 4vw;
+  }
+}
+
 .headerLogo {
   text-decoration: none;
   color: white;
@@ -196,6 +202,7 @@ nav {
     top: 10vh;
     place-content: center;
     overflow-y: scroll;
+    overflow: hidden;
   }
 }
 
@@ -215,13 +222,14 @@ nav {
 @media all and (orientation: portrait) {
   .headerBar {
     background-color: rgba(36, 50, 115);
-    width: 100vw;
+    width: 102vw;
     height: 10vh;
     min-height: 90px;
     position: fixed;
     top: 0px;
     place-content: center;
     z-index: 99;
+    overflow: hidden;
   }
 }
 
