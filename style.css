@@ -83,6 +83,12 @@ body {
   }
 }
 
+@media all and (orientation: landscape) {
+  .down50 {
+    transform: translate(0, 50px);
+  }
+}
+
 /* -- Font Sizes, Padding, Weight, etc -- */
 h1 {
   font-size: 75px;
