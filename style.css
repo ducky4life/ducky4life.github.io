@@ -67,6 +67,22 @@ body {
   place-items: center;
 }
 
+.codebadges img {
+  width: max-content;
+}
+
+@media all and (orientation: portrait) {
+  .codebadges img {
+    width: auto;
+    height: 3vh;
+  }
+
+  .wardenrecruit.codebadges img {
+    height: 15vh;
+    width: auto;
+  }
+}
+
 /* -- Font Sizes, Padding, Weight, etc -- */
 h1 {
   font-size: 75px;
