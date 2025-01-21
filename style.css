@@ -8,6 +8,11 @@
   overflow-x: hidden;
 }
 
+*::selection {
+  background-color: #b0ffff;
+  color: #1a1f46;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .noscroll::-webkit-scrollbar {
   display: none;
