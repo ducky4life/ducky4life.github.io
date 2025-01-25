@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ducky</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+    </style>
+  </head>
+
+  <div class="headerBar">
+    <nav>
+      <a href="/tgw" class="headerLogo">Ducky</a>
+    </nav>
+  </div>
+
+  <body>
+    <section class="header">
+
+        <div class="bioBox">
+            <form>
+                <p>Input</p>
+
+                <label for="season">season:</label>
+
+                <select id="season" class="button button3">
+                  <option value="20">S1</option>
+                  <option value="2">S2</option>
+                  <option value="3">S3</option>
+                  <option value="4">S4</option>
+                </select>
+        
+                <div id="textarea-container">
+                    <textarea id="dbid" autocomplete="off" spellcheck="false"></textarea><br />
+                    <input type="button" id="convert" value="Convert" class="button button3">
+                </div>
+                <p>Output</p>
+                <p id="output"></p>
+            </form>
+            
+            
+            
+            <div id="spin_the_wheel">
+                <canvas id="wheel" width="800" height="800"></canvas>
+                <div id="spin">SPIN</div>
+            </div>
+        </div>
+
+    <script defer src="/wheel/index.js"></script>
+</section>
+  </body>
+</html>
