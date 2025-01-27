@@ -323,7 +323,7 @@ nav {
   text-align: center;
 }
 
-textarea {
+.bigtextarea {
   color: #000;
   width: min(100%, 600px);
   height: 20vh;

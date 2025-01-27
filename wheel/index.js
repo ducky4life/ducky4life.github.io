@@ -1,25 +1,62 @@
 "use strict";
 
 // code is modified from https://greywardens.xyz/tools/region_bbcode/ , thank you :D
-let season = document.querySelector('#season').value;
-var sectors = [];
+let season = 4
+let sectors = [];
 for (let k = 0; k < season; k++) {
     sectors = sectors.concat({ color: "#FFBC03", text: "rgb(255, 217, 0)", label: "MEOW" });
 }
-
-const rand = (m, M) => Math.random() * (M - m) + m;
-const tot = sectors.length;
-const spinEl = document.querySelector("#spin");
-const ctx = document.querySelector("#wheel").getContext("2d");
-const dia = ctx.canvas.width;
-const rad = dia / 2;
-const PI = Math.PI;
-const TAU = 2 * PI;
-const arc = TAU / sectors.length;
-
-const friction = 0.991; // 0.995=soft, 0.99=mid, 0.98=hard
+let rand = (m, M) => Math.random() * (M - m) + m;
+let tot = sectors.length;
+let spinEl = document.querySelector("#spin");
+let ctx = document.querySelector("#wheel").getContext("2d");
+let dia = ctx.canvas.width;
+let rad = dia / 2;
+let PI = Math.PI;
+let TAU = 2 * PI;
+let arc = TAU / sectors.length;
+let friction = 0.991; // 0.995=soft, 0.99=mid, 0.98=hard
 let angVel = 0; // Angular velocity
 let ang = 0; // Angle in radians
+const hexCharacters = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"]
+
+
+
+function getCharacter(index) {
+    return hexCharacters[index]
+}
+
+function generateNewColor() {
+    let hexColorRep = "#"
+
+    for (let index = 0; index < 6; index++){
+        const randomPosition = Math.floor ( Math.random() * hexCharacters.length ) 
+        hexColorRep += getCharacter( randomPosition )
+    }
+
+    return hexColorRep
+}
+
+console.log( generateNewColor() )
+function setstuff() {
+  season = document.querySelector('#season').value;
+  sectors = [];
+for (let k = 0; k < season; k++) {
+    sectors = sectors.concat({ color: "#1a1f46", text: "#b0ffff", label: "nothing here :(" });
+}
+rand = (m, M) => Math.random() * (M - m) + m;
+tot = sectors.length;
+spinEl = document.querySelector("#spin");
+ctx = document.querySelector("#wheel").getContext("2d");
+dia = ctx.canvas.width;
+rad = dia / 2;
+PI = Math.PI;
+TAU = 2 * PI;
+arc = TAU / sectors.length;
+friction = 0.991; // 0.995=soft, 0.99=mid, 0.98=hard
+angVel = 0; // Angular velocity
+ang = 0; // Angle in radians
+}
 
 let spinButtonClicked = false;
 
@@ -30,7 +67,7 @@ function output(e)
     const dbidInput = document.querySelector('#dbid').value.split('\n');
 
     for (let i = 0; i !== dbidInput.length; i++) {
-        sectors.push({ color: "#FFBC03", text: "rgb(255, 217, 0)", label: dbidInput[i] });
+        sectors.splice(i, 1, { color: generateNewColor(), text: "#b0ffff", label: dbidInput[i] });
     }
     for (let j = 0; j < sectors.length; j++)
     {
@@ -84,7 +121,7 @@ document.querySelector('#convert').addEventListener('click', init);
     const sector = sectors[getIndex()];
     ctx.canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
   
-    spinEl.textContent = !angVel ? "SPIN" : sector.label;
+    spinEl.textContent = !angVel ? "weeee?" : sector.label;
     spinEl.style.background = sector.color;
     spinEl.style.color = sector.text;
   }
@@ -111,7 +148,7 @@ document.querySelector('#convert').addEventListener('click', init);
   }
   
   function init() {
-    const season = document.querySelector('#season').value;
+    setstuff();
     sectors.forEach(drawSector);
     console.log(season);
     rotate(); // Initial rotation
@@ -120,8 +157,18 @@ document.querySelector('#convert').addEventListener('click', init);
       if (!angVel) angVel = rand(0.25, 0.45);
       spinButtonClicked = true;
     });
+    output();
   }
   
   events.addListener("spinEnd", (sector) => {
-    console.log(`Woop! You won ${sector.label}`);
+    const myPopup = new Popup({
+      id: "my-popup",
+      title: "skirt go spinned.",
+      content: `u spun ${sector.label}`,
+      backgroundColor: "#1a1f46",
+      titleColor: "#b0ffff",
+      textColor: "#b0ffff",
+      closeColor: "#b0ffff",
+  });
+  myPopup.show();
   });
