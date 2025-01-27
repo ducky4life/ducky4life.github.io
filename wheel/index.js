@@ -121,7 +121,7 @@ document.querySelector('#convert').addEventListener('click', init);
     const sector = sectors[getIndex()];
     ctx.canvas.style.transform = `rotate(${ang - PI / 2}rad)`;
   
-    spinEl.textContent = !angVel ? "weeee?" : sector.label;
+    spinEl.textContent = !angVel ? "wee?" : sector.label;
     spinEl.style.background = sector.color;
     spinEl.style.color = sector.text;
   }
