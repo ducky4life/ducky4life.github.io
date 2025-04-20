@@ -1,9 +1,12 @@
+/* #region variables */
 :root {
   --main-color: #1a1f46;
   --secondary-color: #b0ffff;
   --tertiary-color: rgb(255, 217, 0);
   --navbar-color: rgba(36, 50, 115);
 }
+
+/* #endregion */
 
 /* #region default */
 * {
