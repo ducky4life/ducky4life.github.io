@@ -127,7 +127,7 @@ nav {
 
 .bigtextarea {
   color: #000;
-  width: min(100%, 600px);
+  width: min(100vw, 700px);
   height: 20vh;
   margin-bottom: 10px;
 }
@@ -195,6 +195,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   min-height: 90vh;
+  align-items: center;
 }
 
 @media all and (orientation: portrait) {
