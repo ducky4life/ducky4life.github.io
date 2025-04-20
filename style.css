@@ -170,7 +170,6 @@ nav {
 .navText {
   text-decoration: none;
   flex-direction: row;
-  color: white;
   text-wrap: nowrap;
   font-size: 32px;
   max-width: 500px;
@@ -191,6 +190,11 @@ nav {
 
 .wrapper {
   text-align: center;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
 }
 
 @media all and (orientation: portrait) {
