@@ -119,8 +119,6 @@ nav {
   }
 }
 
-/* #endregion */
-
 #textarea-container {
   text-align: center;
 }
@@ -131,6 +129,8 @@ nav {
   height: 20vh;
   margin-bottom: 10px;
 }
+
+/* #endregion */
 
 /* #region main page */
 .codebadges img {
@@ -188,6 +188,7 @@ nav {
 
 /* #endregion */
 
+/* #region wrapper */
 .wrapper {
   text-align: center;
   margin-top: 10vh;
@@ -204,14 +205,12 @@ nav {
   }
 }
 
+/* #endregion */
+
+/* #region mainBox */
 .mainBox {
   padding-left: 25%;
   padding-right: 25%;
-}
-
-.mainBox.nopadding {
-  margin-left: -25%;
-  margin-right: -25%;
 }
 
 @media all and (orientation: portrait) {
@@ -220,6 +219,8 @@ nav {
     padding-right: 10px;
   }
 }
+
+/* #endregion */
 
 /* #region tgw */
 .wardentitle {
