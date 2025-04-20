@@ -1,3 +1,10 @@
+:root {
+  --main-color: #1a1f46;
+  --secondary-color: #b0ffff;
+  --tertiary-color: rgb(255, 217, 0);
+  --navbar-color: rgba(36, 50, 115);
+}
+
 /* #region default */
 * {
   margin: 0;
@@ -10,8 +17,8 @@
 }
 
 *::selection {
-  background-color: #b0ffff;
-  color: #1a1f46;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 .noscroll::-webkit-scrollbar {
@@ -28,11 +35,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1f46;
+  background: var(--main-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b0ffff;
+  background: var(--secondary-color);
 }
 
 html,
@@ -41,22 +48,22 @@ body a {
 }
 
 a:link {
-  text-decoration-color: #b0ffff;
+  text-decoration-color: var(--secondary-color);
   color: white;
 }
 
 a:visited {
-  text-decoration-color: #b0ffff;
+  text-decoration-color: var(--secondary-color);
   color: white;
 }
 
 a:hover {
-  text-decoration-color: rgb(255, 217, 0);
+  text-decoration-color: var(--tertiary-color);
   transition: 0.5s;
 }
 
 a:active {
-  text-decoration-color: rgb(255, 217, 0);
+  text-decoration-color: var(--tertiary-color);
 }
 
 body {
@@ -82,7 +89,7 @@ h1 {
 
 h2 {
   font-size: minmax(36px, 1fr);
-  text-decoration: underline rgb(255, 217, 0);
+  text-decoration: underline var(--tertiary-color);
 }
 
 h3 {
@@ -157,7 +164,7 @@ nav {
 
 /* #region nav bar */
 .navBar {
-  background-color: rgba(36, 50, 115, 0.95);
+  background-color: var(--navbar-color);
   width: 100vw;
   height: 10vh;
   min-height: 90px;
@@ -182,7 +189,7 @@ nav {
 }
 
 .navText:hover {
-  color: rgb(255, 217, 0);
+  color: var(--tertiary-color);
   transition: 0.5s;
 }
 
@@ -253,9 +260,9 @@ nav {
 
 /* #region button */
 .button {
-  background-color: #b0ffff;
+  background-color: var(--secondary-color);
   border: none;
-  color: #1a1f46;
+  color: var(--main-color);
   padding: 1vh 26px;
   text-align: center;
   text-decoration: none;
@@ -266,8 +273,8 @@ nav {
 }
 
 .button:hover {
-  background-color: #1a1f46;
-  color: #b0ffff;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   transition: 0.2s;
 }
 
