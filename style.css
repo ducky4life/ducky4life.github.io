@@ -1,3 +1,4 @@
+/* #region default */
 * {
   margin: 0;
   padding: 0;
@@ -13,33 +14,29 @@
   color: #1a1f46;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .noscroll::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .noscroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #1a1f46;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #b0ffff;
 }
 
-html, body a {
+html,
+body a {
   cursor: url("favicon.ico"), auto;
 }
 
@@ -66,42 +63,15 @@ body {
   display: grid;
 }
 
-details > summary {
+details>summary {
   list-style: none;
 }
-details > summary::-webkit-details-marker {
+
+details>summary::-webkit-details-marker {
   display: none;
 }
 
-.codebadges img {
-  width: max-content;
-}
 
-@media all and (orientation: portrait) {
-  .codebadges img {
-    width: auto;
-    height: 3vh;
-  }
-
-  .wardenrecruit.codebadges img {
-    height: 15vh;
-    width: auto;
-  }
-}
-
-@media all and (orientation: landscape) {
-  .down50 {
-    transform: translate(0, 50px);
-  }
-}
-
-@media all and (orientation: portrait) {
-  .up50 {
-    transform: translate(0, -50px);
-  }
-}
-
-/* -- Font Sizes, Padding, Weight, etc -- */
 h1 {
   font-size: 75px;
 }
@@ -135,8 +105,6 @@ span {
   font-size: minmax(20px, 1fr);
 }
 
-/* -- Navigation Bar -- */
-
 nav {
   padding-left: 2vw;
 }
@@ -147,11 +115,31 @@ nav {
   }
 }
 
-.headerLogo {
+/* #endregion */
+
+.codebadges img {
+  width: max-content;
+}
+
+.projects {
+  font-size: min(1.3vw, 20px);
+}
+
+@media all and (orientation: portrait) {
+  .codebadges img {
+    width: auto;
+    height: 3vh;
+  }
+
+  .projects.codebadges img {
+    height: 15vh;
+    width: auto;
+  }
+}
+
+.navText {
   text-decoration: none;
-  color: white;
   flex-direction: row;
-  text-decoration: none;
   color: white;
   text-wrap: nowrap;
   font-size: 32px;
@@ -159,7 +147,7 @@ nav {
 }
 
 @media all and (orientation: portrait) {
-  .headerLogo{
+  .navText {
     flex-direction: row;
     text-decoration: none;
     color: white;
@@ -170,28 +158,21 @@ nav {
   }
 }
 
-.headerLogo:hover {
+.navText:hover {
   color: rgb(255, 217, 0);
   transition: 0.5s;
 }
 
 /* -- Header Image --*/
 
-.header.header {
+.header {
   background: url("background.jpg") no-repeat fixed;
-  height: 110vh;
-  width: 100%;
   background-position-x: center;
   background-position-y: top;
   background-size: cover;
-  place-content: center;
-}
-
-.header {
   text-wrap: wrap;
   width: 100%;
   min-width: fit-content;
-  text-align: center;
 }
 
 @media all and (orientation: landscape) and (max-height: 610px) {
@@ -233,31 +214,15 @@ nav {
   }
 }
 
-/* -- Header -- */
-
-.headerBar {
+.navBar {
   background-color: rgba(36, 50, 115, 0.95);
   width: 100vw;
   height: 10vh;
   min-height: 90px;
   position: fixed;
-  top: 0px;
+  top: 0;
   place-content: center;
   z-index: 99;
-}
-
-@media all and (orientation: portrait) {
-  .headerBar {
-    background-color: rgba(36, 50, 115);
-    width: 102vw;
-    height: 10vh;
-    min-height: 90px;
-    position: fixed;
-    top: 0px;
-    place-content: center;
-    z-index: 99;
-    overflow: hidden;
-  }
 }
 
 .titleBox {
@@ -279,32 +244,6 @@ nav {
 .mainBox.nopadding {
   margin-left: -25%;
   margin-right: -25%;
-}
-
-.wardentitle {
-  font-size: 180%;
-}
-
-.wardenlinks {
-  font-size: 120%;
-}
-
-@media all and (orientation: landscape) {
-  .wardentitle {
-    font-size: min(3vw, 32px);
-  }
-
-  .wardenlinks {
-    font-size: min(2vw, 27px);
-  }
-
-  .wardencontent {
-    font-size: min(1.7vw, 24px);
-  }
-
-  .wardenrecruit {
-    font-size: min(1.3vw, 20px);
-  }
 }
 
 @media all and (orientation: portrait) {
@@ -336,7 +275,7 @@ nav {
   margin-bottom: 10px;
 }
 
-.bioBox {
+.centerBox {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -352,7 +291,7 @@ nav {
 }
 
 @media all and (orientation: portrait) {
-  .bioBox {
+  .centerBox {
     color: white;
     height: fit-content;
     padding-left: 10px;
@@ -362,6 +301,36 @@ nav {
   }
 }
 
+/* #region tgw */
+.wardentitle {
+  font-size: 180%;
+}
+
+.wardenlinks {
+  font-size: 120%;
+}
+
+@media all and (orientation: landscape) {
+  .wardentitle {
+    font-size: min(3vw, 32px);
+  }
+
+  .wardenlinks {
+    font-size: min(2vw, 27px);
+  }
+
+  .wardencontent {
+    font-size: min(1.7vw, 24px);
+  }
+
+  .wardenrecruit {
+    font-size: min(1.3vw, 20px);
+  }
+}
+
+/* #endregion */
+
+/* #region button */
 .button {
   background-color: #b0ffff;
   border: none;
@@ -375,7 +344,7 @@ nav {
   width: fit-content;
 }
 
-.button:hover{
+.button:hover {
   background-color: #1a1f46;
   color: #b0ffff;
   transition: 0.2s;
@@ -406,3 +375,5 @@ nav {
 .button5 {
   font-size: 24px;
 }
+
+/* #endregion */
