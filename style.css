@@ -140,6 +140,12 @@ nav {
   margin-bottom: 10px;
 }
 
+.linebreak br {
+  display: block;
+  content: "";
+  margin-top: 0;
+}
+
 /* #endregion */
 
 /* #region main page */
