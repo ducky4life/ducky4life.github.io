@@ -140,12 +140,6 @@ nav {
   margin-bottom: 10px;
 }
 
-.linebreak br {
-  display: block;
-  content: "";
-  margin-top: 0;
-}
-
 /* #endregion */
 
 /* #region main page */
@@ -225,6 +219,7 @@ nav {
 
 /* #region mainBox */
 .mainBox {
+  width: 50%;
   padding-left: 25%;
   padding-right: 25%;
 }
