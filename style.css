@@ -226,6 +226,7 @@ nav {
 
 @media all and (orientation: portrait) {
   .mainBox {
+    width: auto;
     padding-left: 10px;
     padding-right: 10px;
   }
