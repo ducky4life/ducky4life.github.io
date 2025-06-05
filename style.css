@@ -231,6 +231,12 @@ nav {
   }
 }
 
+@media all and (orientation: landscape) {
+  .mainBox {
+    width: 50%;
+  }
+}
+
 /* #endregion */
 
 /* #region tgw */
