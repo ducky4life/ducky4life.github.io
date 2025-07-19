@@ -1,6 +1,6 @@
 "use strict";
 
-// code is modified from https://greywardens.xyz/tools/region_bbcode/ , thank you :D
+// code is modified from https://github.com/olimorris/spin-the-wheel and https://greywardens.xyz/tools/region_bbcode/ , thank you :D
 let season = 4
 let sectors = [];
 for (let k = 0; k < season; k++) {
