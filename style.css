@@ -47,7 +47,7 @@
 
 html,
 body a {
-  cursor: url("favicon.ico"), auto;
+  cursor: url("./favicon.ico"), auto;
 }
 
 a:link {
@@ -70,7 +70,7 @@ a:active {
 }
 
 body {
-  background: url("background.jpg") no-repeat fixed;
+  background: url("./background.jpg") no-repeat fixed;
   background-position-x: center;
   background-position-y: top;
   background-size: cover;
