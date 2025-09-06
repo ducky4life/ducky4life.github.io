@@ -158,8 +158,8 @@ nav {
   }
 
   .projects.codebadges img {
-    height: 15vh;
-    width: auto;
+    height: auto;
+    width: 90vw;
   }
 }
 
@@ -315,3 +315,4 @@ nav {
 }
 
 /* #endregion */
+
