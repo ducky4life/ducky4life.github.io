@@ -69,12 +69,15 @@ a:active {
   text-decoration-color: var(--tertiary-color);
 }
 
-body {
-  background: url("./background.jpg") no-repeat fixed;
-  background-position-x: center;
-  background-position-y: top;
+.bg-fixed {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("./images/background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  pointer-events: none;
 }
 
 details>summary {
@@ -315,4 +318,5 @@ nav {
 }
 
 /* #endregion */
+
 
