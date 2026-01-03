@@ -61,7 +61,6 @@ a:visited {
 }
 
 a:hover {
-  -webkit-text-decoration-color: var(--tertiary-color);
   text-decoration-color: var(--tertiary-color);
   transition: 0.5s;
 }
@@ -323,6 +322,7 @@ nav {
 }
 
 /* #endregion */
+
 
 
 
