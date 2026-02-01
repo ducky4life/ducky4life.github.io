@@ -103,7 +103,8 @@ h1 {
 
 h2 {
   font-size: minmax(36px, 1fr);
-  text-decoration: underline var(--tertiary-color);
+  text-decoration: underline;
+  text-decoration-color: var(--tertiary-color);
 }
 
 h3 {
@@ -149,6 +150,11 @@ nav {
   width: min(100vw, 700px);
   height: 20vh;
   margin-bottom: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: (--tertiary-color);
 }
 
 /* #endregion */
