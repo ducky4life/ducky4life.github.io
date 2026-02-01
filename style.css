@@ -67,6 +67,7 @@ a:visited {
 a:hover {
   text-decoration-color: var(--tertiary-color);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 a:active {
@@ -180,6 +181,9 @@ nav {
   }
 }
 
+.divider {
+  color: white;
+}
 /* #endregion */
 
 /* #region nav bar */
