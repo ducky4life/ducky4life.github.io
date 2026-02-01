@@ -19,6 +19,10 @@
   overflow-x: hidden;
 }
 
+html {
+  width: 100vw;
+}
+
 *::selection {
   background-color: var(--secondary-color);
   color: var(--main-color);
