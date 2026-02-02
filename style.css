@@ -155,7 +155,7 @@ nav {
 
 .underline {
   text-decoration: underline;
-  text-decoration-color: (--tertiary-color);
+  text-decoration-color: var(--tertiary-color);
 }
 
 /* #endregion */
@@ -324,6 +324,7 @@ nav {
 @media all and (orientation: portrait) {
   .button3 {
     font-size: 3vw;
+    margin: 2px 2px;
   }
 }
 
